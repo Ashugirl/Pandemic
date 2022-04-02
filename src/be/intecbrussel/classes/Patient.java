@@ -56,7 +56,7 @@ public class Patient {
         this.temperature = temperature;
     }
 
-    public boolean isUnknownVirus() {
+    public Boolean isUnknownVirus() {
         return unknownVirus;
     }
 
@@ -64,7 +64,7 @@ public class Patient {
         this.unknownVirus = unknownVirus;
     }
 
-    public boolean isInsured() {
+    public Boolean isInsured() {
         return insured;
     }
 
@@ -72,7 +72,7 @@ public class Patient {
         this.insured = insured;
     }
 
-    public List<Patient> getAllPatients(){
+    public static List<Patient> getAllPatients(){
         List<Patient> allPatients = new ArrayList<>();
         Patient princeCharming = new Patient("368201321", "Prince Charming", 95, 37, true, true);
         Patient crazyFrog = new Patient("687201321", "Crazy Frog", 5, 39, false, false);
@@ -123,7 +123,7 @@ public class Patient {
 
     @Override
     public String toString() {
-        return "Patient{" +
+        return "\nPatient{" +
                 "nationalRegistryNumber='" + nationalRegistryNumber + '\'' +
                 ", fullName='" + fullName + '\'' +
                 ", age=" + age +
