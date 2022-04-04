@@ -2,6 +2,7 @@ package be.intecbrussel.classes;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Patient {
     private String nationalRegistryNumber;
@@ -116,9 +117,6 @@ public class Patient {
         allPatients.add(new Patient("222201321", "April O'Neil", 29, 37, false, false));
         return allPatients;
     }
-
-
-
 
 
     @Override
